@@ -1,0 +1,211 @@
+.main_hero {
+    background-image: url(../img/vinos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 55rem;
+}
+
+@media (min-width:768px) {
+    .main_hero {
+        height: 70rem;
+    }
+}
+
+.main_principal {
+    padding-top: 2rem;
+}
+
+@media (min-width:768px) {
+    
+    .main_listado_productos {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 2rem;
+    
+    }
+    
+    .main_producto:nth-child(1) {
+        grid-column:  1 / 3;
+    }
+    
+    .main_producto:nth-child(2) {
+        grid-column: 3 / 5;
+    }
+    
+    .main_producto:nth-child(3) {
+        grid-column: 5 / 7;
+    }
+    
+    .main_producto:nth-child(4) {
+        grid-column:  1 / 3;
+    }
+    
+    .main_producto:nth-child(5) {
+        grid-column: 3 / 5;
+    }
+    
+    .main_producto:nth-child(6) {
+        grid-column: 5 / 7;
+    }
+}
+
+.main_producto {
+    background-color: $color-principal;
+    margin-bottom: 2rem;
+    border: .1rem solid #e1e1e1;
+    border-radius: .5rem;
+    margin: 4rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+
+@media (min-width:768px) {
+    .main_producto {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width:768px) {
+    .main_img {
+        width: 80rem;
+    }
+}
+
+
+.main_producto:last-of-type {
+    margin-bottom: 0;
+}
+
+
+.main_texto_producto {
+    text-align: center;
+    color: #fff;
+    padding: 2rem;
+}
+
+.main_texto_producto h3 {
+    margin: 0;
+}
+
+.main_texto_producto p {
+    margin: 0 0 .5rem 0;
+}
+
+.main_texto_producto .main_precio {
+    font-size: 2.8rem;
+    font-weight: 900;
+}
+
+.main_texto_producto a {
+    background-color: #8cbc00;
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    transition: background-color .3s ease-out;
+    -webkit-transition: background-color .3s ease-out;
+    -moz-transition: background-color .3s ease-out;
+    -ms-transition: background-color .3s ease-out;
+    -o-transition: background-color .3s ease-out;
+}
+
+.main_texto_producto a:hover {
+    background-color: #769c02;
+}
+
+/* Nosotros */ 
+
+.main_contenido_nosotros {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-columns: repeat(auto-fit, minmax( 25rem, 1fr) );
+    column-gap: 4rem;
+}
+
+.main_nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Servicios */
+
+.main_contenido_servicios {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin: 0;
+    text-align: center;
+}
+
+.main_contenido_servicios img {
+    max-width: 30rem;
+    margin-left: 10rem;
+
+}
+
+@media (min-width:768px) {
+    .main_contenido_servicios {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-columns: repeat(auto-fit, minmax( 25rem, 1fr) );
+        grid-template-rows: unset;
+        column-gap: 4rem;
+        border: .1rem solid;
+        margin-top: 5rem;
+        padding-top: 5rem;
+    }
+}
+
+@media (min-width:768px) {
+    .main_servicios {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.main_servicios span{
+    font-weight: 900;
+}
+
+/* Contacto */ 
+
+.contacto_formulario {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.contacto_formulario fieldset {
+    border: .1rem solid #000;
+    margin-bottom: 2rem;
+}
+
+.contacto_formulario legend {
+    background-color: $color-principal;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    margin-bottom: 4rem;
+}
+
+.contacto_campo {
+    display: flex;
+    margin-bottom: 4rem;
+}
+
+.contacto_campo label {
+    flex-basis: 10rem;
+}
+
+.contacto_campo input:not([type="radio"]), .contacto_campo  textarea, .contacto_campo select {
+    flex: 1;
+    border: .1rem solid #e1e1e1;
+    padding: 1rem;
+}

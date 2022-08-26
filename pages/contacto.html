@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Donde Isolina</title>
+</head>
+<body>
+    
+    <header class="header_titulo">
+        <div>
+            <p class="header_titulo_p">Despacho gratis en compras sobre $40.000</p>
+        </div>
+        <div>
+            <h1>Don<span class="titulo_septiembre">de Iso</span><span class="titulo_rojo">lina</span></h1>
+        </div>
+    </header>
+
+    <div class="nav_contenedor_barra">
+        <nav class="nav_menu contenedor">
+            <a class="nav_enlace" href="../index.html">Inicio</a>
+            <a class="nav_enlace" href="./nosotros.html">Nosotros</a>
+            <a class="nav_enlace" href="./tienda.html">Tienda</a>
+            <a class="nav_enlace" href="./servicios.html">Servicios</a>
+            <a class="nav_enlace" href="./contacto.html">Contacto</a>
+        </nav>
+    </div>
+
+    <main class="main_principal contenedor">
+        <h2 class="text_center">Contacto</h2>
+
+        <form class="contacto_formulario">
+            <fieldset>
+            <legend>Tus Datos</legend>
+
+            <div class="contacto_campo">
+                <label for="nombre">Nombre:</label>
+                <input class="contacto_input" id="nombre" type="text" placeholder="Coloca tu Nombre" required>
+            </div>
+
+            <div class="contacto_campo">
+                <label for="asunto">Asunto</label>
+                <input  id="asunto" type="text" placeholder="Tu Asunto">
+            </div>
+
+            <div class="contacto_campo">
+                <label for="email">E-mail</label>
+                <input id="email" type="email" placeholder="Tu Email" required>
+            </div>
+
+            <div class="contacto_campo">
+            <label for="tel">Teléfono</label>
+            <input id="tel" type="tel" placeholder="Tu Telefono" required>
+            </div>
+
+            <div class="contacto_campo">
+            <label for="tel">Mensaje</label>
+            <textarea rows="10"></textarea>
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>País</legend>
+
+            <div class="contacto_campo">
+            <label for="pais">País</label>
+            <select name="" id="pais">
+                <option value="">-- Seleccione --</option>
+                <option value="AR">Argentina</option>
+                 <option value="BL">Bolivia</option>
+                <option value="BR">Brasil</option>
+                <option selected value="CL">Chile</option>
+                <option value="CU">Cuba</option>
+                <option value="MX">México</option>
+                <option value="PN">Panamá </option>
+                <option value="PA">Paraguay </option>
+                <option value="PE">Perú</option>
+                <option value="UR">Uruguay </option>
+            </select>
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Información Extra</legend>
+
+            <div class="contacto_campo">
+                <label for="cliente">Cliente</label>
+                <input id="cliente" type="radio" name="tipo">
+            </div>
+
+            <div class="contacto_campo">
+                <label for="proveedor">Proveedor</label>
+                <input id="proveedor" type="radio" name="tipo">
+            </div>
+
+            <div class="contacto_campo">
+                <label for="categoria">Categoría de Interés</label>
+                <input list="categorias" name="categorias">
+                <datalist id="categorias">
+                    <option value="Atención comercial">
+                    <option value="Reclamo">
+                    <option value="Otras Consultas">
+                </datalist>
+            </div>
+
+        </fieldset>
+
+        <input class="btn" type="submit" value="Enviar Formulario">
+
+        </form>
+    </main>
+
+    <footer class="footer_lista contenedor">
+    <div class="footer_grid contenedor">
+        <div >
+            <h3>Categorías</h3>
+
+            <nav class="footer_menu">
+                <a href="">Vinos</a>
+                <a href="">Cervezas</a>
+                <a href="">Destilados</a>
+                <a href="">Snacks</a>
+                <a href="">Hielos</a>
+            </nav>
+
+        </div>
+
+        <div >
+            <h3>Sobre Nosotros</h3>
+
+            <nav class="footer_menu">
+                <a href="">Nuestra Historia</a>
+                <a href="">Misión, Visión y Valores</a>
+                <a href="">Trabaja con Nosotros</a>
+                <a href="">Política de Privacidad</a>
+                <a href="">Términos del Servicio</a>
+            </nav>
+        </div>
+
+        <div >
+            <h3>Soporte</h3>
+
+            <nav class="footer_menu">
+                <a href="">Preguntas Frecuentes</a>
+                <a href="">Ayuda en Línea</a>
+                <a href="">Confianza y Seguridad</a>
+            </nav>
+        </div>
+    </div>
+    <P class="footer_copyright">Todos los derechos reservados - Donde Isolina</P>
+    
+
+    </footer>
+
+</body>
+</html>
