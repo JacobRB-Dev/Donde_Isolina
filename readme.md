@@ -4,6 +4,5 @@
     <li>HTML</li>
     <li>CSS</li>
     <li>SAAS</li>
-    <li>Bootstrap</li>
     <li>NODE.js</li>
     </ul>
